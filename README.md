@@ -3,6 +3,8 @@ Database Tooling having now only one purpose: being able to call SQL code within
 
 The problem was happening when using Sqlite. Maybe it would not otherwise.
 
+See https://www.codeproject.com/Articles/5327089/Executing-SQL-code-within-EntityFrameworkCore-migr for the full article.
+
 ## Example of the issue:
 ```
 migrationBuilder.AlterColumn<DateTime>(
