@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Migrations.Operations;
 
 namespace com.cyberinternauts.csharp.Database
 {
-    public class MigrationsSqlGenerator<GeneratorType> : IMigrationsSqlGenerator where GeneratorType : MigrationsSqlGenerator
+    public class MigrationsSqlGenerator<GeneratorType> : IMigrationsSqlGenerator where GeneratorType : IMigrationsSqlGenerator
     {
         public GeneratorType BaseGenerator { get; private set; }
         protected MigrationsSqlGeneratorDependencies Dependencies { get; private set; }
